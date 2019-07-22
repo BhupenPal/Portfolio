@@ -1,0 +1,83 @@
+*{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    outline: none;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+/* Make Scrollbar Transparent */
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+/* Tablets -> Laptops -> Desktop */
+
+@media (min-width: 768px) and (max-width: 1920px) {
+  
+    .sideNav{
+        background-color: rgba(24, 24, 24, 1);
+        height: 100%;
+        width: 60px;
+        text-align: center;
+        position: fixed;
+        z-index: 1;
+    }
+    
+    .logo{
+        height: 47px;
+        margin-left: -4px;
+        margin-top: 15px;
+        margin-bottom: 20vh;
+    }
+
+    .main{
+        padding-left: 110px;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(37, 38, 39);
+    }
+
+    #edu{
+        padding-top: 80px;
+        margin-top: 50vh;
+        margin-bottom: 50vh;
+    }
+
+    #edu *{
+        margin: 15px 0;
+    }
+
+    #edu h5{
+        font-weight: lighter;
+    }
+
+    .options{
+        margin: 12px 0;
+    }
+
+    .head{
+        color: white;
+        margin-top: 22vh;
+        margin-bottom: 25px;
+        font-family: russo one, sans-serif;
+        font-size: 6.6vh;
+        cursor: default;
+    }
+
+    .subHead{
+        margin: 3vh 1vw;
+        min-width: 40vw;
+        max-width: 760px;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 3.3vh;
+      }
+}
+
+

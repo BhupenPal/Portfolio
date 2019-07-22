@@ -5,43 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bhupen Pal - Portfolio</title>
-    <link rel="stylesheet" href="./assets/style/portfolio.css">
-    <link href="https://fonts.googleapis.com/css?family=Russo+One&display=swap" rel="stylesheet">
+    <title>Bhupen Pal</title>
+    <link rel="stylesheet" href="./assets/style/porter.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="./assets/scripts/manager.js"></script>
 </head>
 
 <body>
-    <div style="display: flex">
-        <div class="sideBar">
-            <a href="index.html"><img class="logo" src="./assets/images/logo.png"></a>
-            <a href="#"><img class="options" src="./assets/images/home.png"></a>
-            <a href="#"><img class="options" src="./assets/images/edu.png"></a>
-            <a href="#"><img class="options" src="./assets/images/settings.png"></a>
-            <a href="#"><img class="options" src="./assets/images/email.png"></a>
-        </div>
+    <div class="sideNav">
+        <a href="."><img src="./assets/images/logo.png" class="logo"></a>
+        <a href="#top"><img class="options" src="assets/images/home.png" id="home"></a>
+        <a href="#edu"><img class="options" src="assets/images/edu.png"></a>
+        <a href=""><img class="options" src="assets/images/gear.png"></a>
+        <a href=""><img class="options" src="assets/images/email.png"></a>
+    </div>
 
-        <div class="main">
-            <div>
+    <div class="main">
 
-            </div>
-            <div class="Dater">
-
-                <div class="head">
-                    <h1 style="color: rgb(8, 253, 216)" class="animated bounce">Hi,</h1>
-                    <h1>I'm Bhupen Pal</h1>
-                </div>
+        <div id="top">
+            <div class="head">
+                <h1 style="color: rgb(8, 253, 216)" class="animated bounce">Hi,</h1>
+                <h1>I'm Bhupen Pal</h1>
                 <div class="subHead">
                     <p>An Inquisitive Engineering Aspirant & an upcoming Passionate Engineer.</p>
                     <p>A Go-Getter & a Problem-Solver.</p>
                 </div>
-
-                <div style="margin-top:100vh; height:100vh; width:250px; background-color:yellow;">
-                </div>
-
             </div>
         </div>
+
+        <div id="edu">
+            <div class="head">
+                <h1 style="color: rgb(8, 253, 216)">Education</h1>
+                <h5>Maharaja Agrasen Institute of Technology</h5>
+                <div class="subHead">
+                    <p>Pursuing B.Tech (CSE)</p>
+                </div>
+                <h5>Kendriya Vidyalaya AGCR</h5>
+                <div class="subHead">
+                    <p>12th (CBSE - PCM) - 74.5%</p>
+                </div>
+                <h5>Kendriya Vidyalaya Robert Square</h5>
+                <div class="subHead">
+                    <p>10th (CBSE) - 7.8 CGPA</p>
+                </div>
+            </div>
+        </div>
+
     </div>
+
 </body>
 
 </html>
