@@ -15,6 +15,77 @@
     background: transparent;
   }
 
+  @media (min-width: 0px) and (max-width: 767px) {
+  
+    .sideNav{
+        background-color: rgba(24, 24, 24, 1);
+        width: 100%;
+        height: 60px;
+        position: fixed;
+        z-index: 1;
+        display: flex;
+    }
+    
+    .logo{
+        height: 47px;
+        margin-top: 8px;
+        margin-right: 25vh;
+    }
+
+    .main{
+        text-align: center;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(37, 38, 39);
+    }
+
+    .takeCare{
+        display: flex;
+    }
+
+    #home{
+        margin-top:12px;
+    }
+
+    #homeSel{
+        margin-top: 12px;
+    }
+
+    .options{
+        margin: 8px 0;
+    }
+
+    .head{
+        color: white;
+        margin-top: 15vh;
+        margin-bottom: 25px;
+        font-family: russo one, sans-serif;
+        font-size: 6.6vh;
+        cursor: default;
+    }
+
+    .subHead{
+        margin: 3vh 1vw;
+        min-width: 40vw;
+        max-width: 760px;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 3.3vh;
+    }
+
+    .htmler, .csser, .bstrap, .jser, .noder, .mongo, .npmer, .git{
+        margin: 3px 3px;
+        transition: 0.2s;
+    }
+
+    .htmler:hover, .csser:hover, .bstrap:hover, .jser:hover, .noder:hover, .mongo:hover, .npmer:hover, .git:hover{
+        -ms-transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+}
+
 /* Tablets -> Laptops -> Desktop */
 
 @media (min-width: 768px) and (max-width: 1920px) {
@@ -33,6 +104,7 @@
         margin-left: -4px;
         margin-top: 15px;
         margin-bottom: 20vh;
+        
     }
 
     .main{
@@ -43,19 +115,6 @@
         background-color: rgb(37, 38, 39);
     }
 
-    #edu{
-        padding-top: 80px;
-        margin-top: 50vh;
-        margin-bottom: 50vh;
-    }
-
-    #edu *{
-        margin: 15px 0;
-    }
-
-    #edu h5{
-        font-weight: lighter;
-    }
 
     .options{
         margin: 12px 0;
@@ -77,7 +136,17 @@
         color: white;
         font-family: 'Courier New', Courier, monospace;
         font-size: 3.3vh;
-      }
+    }
+
+    .htmler, .csser, .bstrap, .jser, .noder, .mongo, .npmer, .git{
+        margin: 3px 3px;
+        transition: 0.2s;
+    }
+
+    .htmler:hover, .csser:hover, .bstrap:hover, .jser:hover, .noder:hover, .mongo:hover, .npmer:hover, .git:hover{
+        -ms-transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
 }
-
-
+    

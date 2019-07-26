@@ -9,21 +9,39 @@
     <link rel="stylesheet" href="./assets/style/porter.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo+One&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <script src="./assets/scripts/manager.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./assets/scripts/manager.js"></script>
 </head>
 
 <body>
     <div class="sideNav">
-        <a href="."><img src="./assets/images/logo.png" class="logo"></a>
-        <a href="#top"><img class="options" src="assets/images/home.png" id="home"></a>
-        <a href="#edu"><img class="options" src="assets/images/edu.png"></a>
-        <a href=""><img class="options" src="assets/images/gear.png"></a>
-        <a href=""><img class="options" src="assets/images/email.png"></a>
+        
+        <a href="." rel="index"><img src="./assets/images/logo.png" class="logo"></a>
+        <nav class="takeCare">
+        <div style="height: 50px; width:32px; margin-left: 14px;" onclick="logos('1')" id="Home">
+        <a href="#top"><img class="options" src="assets/images/home.png" id="home" style="display: none;"></a>
+        <a href="#top"><img class="options" src="assets/images/homeSel.png" id="homeSel"></a>
+        </div>
+        <div style="height: 50px; width:32px; margin-top: 10px; margin-left: 14px;" onclick="logos('2')" id="Edu" >
+        <a href="#edu"><img class="options" src="assets/images/edu.png" id="edui"></a>
+        <a href="#edu"><img class="options" src="assets/images/eduSel.png" id="eduiSel"></a>
+        </div>
+        <div style="height: 50px; width:32px; margin-top: 10px; margin-left: 14px;" onclick="logos('3')" id="Gear">
+        <a href="#skills"><img class="options" src="assets/images/gear.png" id="gear"></a>
+        <a href="#skills"><img class="options" src="assets/images/gearSel.png" id="gearSel"></a>
+        </div>
+        <div style="height: 50px; width:32px; margin-top: 10px; margin-left: 14px;" onclick="logos('4')" id="Email">
+        <a href="#contact"><img class="options" src="assets/images/email.png" id="email"></a>
+        <a href="#contact"><img class="options" src="assets/images/emailSel.png" id="emailSel"></a>
+        </div>
+    </nav>
     </div>
 
-    <div class="main">
+    <div class="main" style="display: flex; position:fixed;">
 
-        <div id="top">
+        <div id="top" style="position: fixed; z-index:1000;">
             <div class="head">
                 <h1 style="color: rgb(8, 253, 216)" class="animated bounce">Hi,</h1>
                 <h1>I'm Bhupen Pal</h1>
@@ -34,7 +52,7 @@
             </div>
         </div>
 
-        <div id="edu">
+        <div id="edu" style="position: fixed; z-index:800; display: none">
             <div class="head">
                 <h1 style="color: rgb(8, 253, 216)">Education</h1>
                 <h5>Maharaja Agrasen Institute of Technology</h5>
@@ -52,8 +70,38 @@
             </div>
         </div>
 
-    </div>
+        <div id="skills" style="position: fixed; z-index:600; display: none">
+            <div class="head">
+                <h1 style="color: rgb(8, 253, 216)">Skills</h1>
+                <div class="subHead">
+                    <p>The main area of my expertise is Full-Stack Web Development(client side + server side of the web).</p>
+                    <p>Also have keen interest in programming/coding or building up new things from scratch.</p>
+                </div>
 
+                    <img src="https://img.icons8.com/color/70/000000/html-5.png" class="htmler">
+                    <img src="https://img.icons8.com/color/70/000000/css3.png" class="csser">
+                    <img src="https://img.icons8.com/color/70/000000/bootstrap.png" class="bstrap">
+                    <img src="https://img.icons8.com/color/70/000000/javascript.png" class="jser">
+                    <img src="https://img.icons8.com/color/75/000000/nodejs.png" class="noder">
+                    <img src="https://img.icons8.com/color/70/000000/mongodb.png" class="mongo">
+                    <img src="https://img.icons8.com/color/80/000000/npm.png" class="npmer">
+                    <img src="https://img.icons8.com/color/70/000000/git.png" class="git">
+
+            </div>
+        </div>
+        
+        <div id="contact" style="position: fixed; z-index:100; display: none; margin-top: 10px;" >
+            <div class="head">
+                <h1 style="color: rgb(8, 253, 216)">Contact Details</h1>
+                <div class="subHead">
+                    <p id="target">Email : bhupen16pal@gmail.com</p>
+                    <p>Contact Number : 9587551153</p>
+                </div>
+            </div>
+        </div>
+
+    
+    </div>
 </body>
 
 </html>
